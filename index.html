@@ -68,7 +68,7 @@
         .bottom-image {
             position: absolute;
             bottom: 120px;
-            right: 1px;
+            right: 0px;
             max-width: 400px;
             width: 30%;
         }
@@ -91,6 +91,20 @@
             padding: 20px 0;
         }
 
+        @media (max-width: 768px) {
+            
+            .main-content {
+                top: 15%;
+            }
+            
+            .bottom-image {
+                right: 0px;
+                max-width: 400px;
+                width: 80%;
+                bottom: 130px;
+            }
+        }
+
         @media (max-width: 480px) {
             .typing-container {
                 padding-left: 15px;
@@ -110,10 +124,10 @@
             }
             
             .bottom-image {
-                right: 1px;
+                right: 0px;
                 max-width: 400px;
                 width: 80%;
-                bottom: 150px;
+                bottom: 160px;
             }
         }
     </style>
