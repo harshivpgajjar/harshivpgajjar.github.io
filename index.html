@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: white;
+            margin: 0;
+            padding: 0;
+            height: calc(100vh + 100px);
+            position: relative;
+            overflow-x: hidden;  /* Prevent horizontal scroll */
+        }
+
+        .main-content {
+            position: absolute;
+            top: 35%;
+            transform: translateY(-50%);
+            width: 100%;
+        }
+
+        .container-fluid {
+            padding: 0;
+            width: 100%;
+            overflow-x: hidden;  /* Prevent horizontal scroll */
+        }
+
+        .typing-container {
+            display: inline-block;
+            text-align: left;
+            position: relative;
+            padding-left: 30px;
+        }
+
+        .typing-text {
+            font-size: 3rem;
+            font-weight: 300;
+            color: #333;
+            display: inline-block;
+        }
+
+        .dots {
+            display: inline-block;
+            width: 70px;
+            font-size: 3.5rem;
+            line-height: 0;
+            position: relative;
+            top: -5px;
+            margin-left: 5px;
+        }
+
+        @keyframes typing {
+            0% { content: ''; }
+            25% { content: '.'; }
+            50% { content: '..'; }
+            75% { content: '...'; }
+            100% { content: ''; }
+        }
+
+        .dots::after {
+            content: '';
+            animation: typing 2s infinite;
+        }
+
+        .bottom-image {
+            position: absolute;
+            bottom: 120px;
+            right: 1px;
+            max-width: 400px;
+            width: 30%;
+        }
+
+        .footer-wrapper {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            background: white;
+        }
+
+        hr {
+            width: 75%;
+            margin: 0 auto 20px auto;
+            border-top: 1px solid #000;
+        }
+
+        .footer-wrapper {
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        @media (max-width: 480px) {
+            .typing-container {
+                padding-left: 15px;
+            }
+            
+            .main-content {
+                top: 20%;
+            }
+
+            .typing-text {
+                font-size: 2rem;
+            }
+            
+            .dots {
+                font-size: 2rem;
+                width: 40px;
+            }
+            
+            .bottom-image {
+                right: 1px;
+                max-width: 400px;
+                width: 80%;
+                bottom: 100px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main-content">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="typing-container">
+                        <span class="typing-text">in process</span>
+                        <span class="dots"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <img src="logo.png" alt="Placeholder" class="bottom-image">
+
+    <div class="footer-wrapper">
+        <hr>
+        <div>Copyright © 2024 mjpt - All rights reserved.</div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
