@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NewVape.ca - Premium Vape Shop Near TMU</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+</head>
+<body>
+    <!-- Age Verification -->
+    <div id="age-verification">
+        <div class="age-box">
+            <h2>Age Verification Required</h2>
+            <p>This website contains vaping products suitable for adults only. By entering, you confirm that you are at least 19 years of age.</p>
+            <div class="age-btns">
+                <button class="btn btn-success" id="verifyAge">Yes, I am over 19</button>
+                <button class="btn btn-danger" id="rejectAge">No, I am under 19</button>
+            </div>
+            <p style="margin-top: 20px; font-size: 0.9rem; color: #666;">
+                WARNING: Vaping products contain nicotine. Nicotine is an addictive substance. Use of these products may be hazardous to your health.
+            </p>
+        </div>
+    </div>
+
+    <!-- Main Content (Hidden initially) -->
+    <div id="main-content">
+        <!-- Header -->
+        <header>
+            <div class="container header-container">
+                <div class="logo"><i class="fas fa-cloud"></i> NewVape<span style="color: var(--accent)">.ca</span></div>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li>
+                        <a href="products.html">Products <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-menu">
+                            <a href="products.html#disposables">Disposables</a>
+                            <a href="products.html#hardware">Hardware</a>
+                            <a href="products.html#eliquids">E-Liquids</a>
+                            <a href="products.html#pods">Pods & Cartridges</a>
+                            <a href="products.html#accessories">Accessories</a>
+                        </div>
+                    </li>
+                    <li><a href="#deals">Deals</a></li>
+                    <li><a href="#location">Visit Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="header-icons">
+                    <div class="header-icon" id="searchIcon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <div class="header-icon" id="userIcon">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="header-icon" id="cartIcon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <section class="hero" id="home">
+            <div class="container hero-content">
+                <h1>Premium Vape Products at the Best Prices in Toronto</h1>
+                <p>Discover our wide selection of high-quality vaping products. Visit our store near TMU campus or order online for in-store pickup.</p>
+                <div class="hero-btns">
+                    <a href="products.html" class="btn btn-primary">Browse Products</a>
+                    <a href="#location" class="btn btn-outline">Find Our Store</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Best Prices Banner -->
+        <div class="price-banner">
+            <div class="container">
+                <h3>BEST PRICES GUARANTEED</h3>
+                <p>We match or beat any competitor's price in the Toronto area</p>
+            </div>
+        </div>
+
+        <!-- Categories Section -->
+        <section class="categories" id="products">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Product Categories</h2>
+                    <p>Explore our extensive range of premium vaping products</p>
+                </div>
+                <div class="categories-grid">
+                    <!-- Disposables -->
+                    <div class="category-card">
+                        <div class="category-img">
+                            <img src="/api/placeholder/200/200" alt="Disposable Vapes">
+                        </div>
+                        <div class="category-info">
+                            <h3>Disposables</h3>
+                            <p>Convenient, pre-filled devices for on-the-go use</p>
+                            <a href="products.html#disposables" class="btn btn-outline">Browse Collection</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Hardware -->
+                    <div class="category-card">
+                        <div class="category-img">
+                            <img src="/api/placeholder/200/200" alt="Vape Hardware">
+                        </div>
+                        <div class="category-info">
+                            <h3>Hardware</h3>
+                            <p>High-quality devices, mods, and starter kits</p>
+                            <a href="products.html#hardware" class="btn btn-outline">Browse Collection</a>
+                        </div>
+                    </div>
+                    
+                    <!-- E-Liquids -->
+                    <div class="category-card">
+                        <div class="category-img">
+                            <img src="/api/placeholder/200/200" alt="E-Liquids">
+                        </div>
+                        <div class="category-info">
+                            <h3>E-Liquids</h3>
+                            <p>Premium flavors in various nicotine strengths</p>
+                            <a href="products.html#eliquids" class="btn btn-outline">Browse Collection</a>
+                        </div>
+                    </div>
+                    
+                    <!-- Pods -->
+                    <div class="category-card">
+                        <div class="category-img">
+                            <img src="/api/placeholder/200/200" alt="Pods & Cartridges">
+                        </div>
+                        <div class="category-info">
+                            <h3>Pods & Cartridges</h3>
+                            <p>Replacement pods and cartridges for your device</p>
+                            <a href="products.html#pods" class="btn btn-outline">Browse Collection</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Deals Section -->
+        <section class="deals" id="deals">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Hot Deals</h2>
+                    <p>Limited-time offers on our most popular products</p>
+                </div>
+                <div class="deals-grid">
+                    <!-- Deal 1 -->
+                    <div class="deal-card">
+                        <div class="discount-badge">-20%</div>
+                        <div class="deal-img">
+                            <img src="/api/placeholder/200/200" alt="Deal 1">
+                        </div>
+                        <div class="deal-info">
+                            <h3 class="deal-title">Premium Disposable Vape</h3>
+                            <div class="pricing">
+                                <span class="original-price">$39.99</span>
+                                <span class="current-price">$31.99</span>
+                            </div>
+                            <div class="deal-footer">
+                                <div class="deal-timer"><i class="far fa-clock"></i> 3 days left</div>
+                                <a href="#" class="btn btn-primary btn-sm add-to-cart">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Deal 2 -->
+                    <div class="deal-card">
+                        <div class="discount-badge">-15%</div>
+                        <div class="deal-img">
+                            <img src="/api/placeholder/200/200" alt="Deal 2">
+                        </div>
+                        <div class="deal-info">
+                            <h3 class="deal-title">Advanced Mod Kit</h3>
+                            <div class="pricing">
+                                <span class="original-price">$89.99</span>
+                                <span class="current-price">$76.49</span>
+                            </div>
+                            <div class="deal-footer">
+                                <div class="deal-timer"><i class="far fa-clock"></i> 5 days left</div>
+                                <a href="#" class="btn btn-primary btn-sm add-to-cart">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Deal 3 -->
+                    <div class="deal-card">
+                        <div class="discount-badge">-25%</div>
+                        <div class="deal-img">
+                            <img src="/api/placeholder/200/200" alt="Deal 3">
+                        </div>
+                        <div class="deal-info">
+                            <h3 class="deal-title">Premium E-Liquid Bundle</h3>
+                            <div class="pricing">
+                                <span class="original-price">$59.99</span>
+                                <span class="current-price">$44.99</span>
+                            </div>
+                            <div class="deal-footer">
+                                <div class="deal-timer"><i class="far fa-clock"></i> 2 days left</div>
+                                <a href="#" class="btn btn-primary btn-sm add-to-cart">Add to Cart</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Products -->
+        <section class="featured-products">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Featured Products</h2>
+                    <p>Our most popular and highest-rated items</p>
+                </div>
+                <div class="products-grid">
+                    <!-- Product 1 -->
+                    <div class="product-card">
+                        <div class="product-badge">
+                            <span class="badge badge-primary">New</span>
+                        </div>
+                        <div class="product-img">
+                            <img src="/api/placeholder/200/200" alt="Premium Disposable">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-category">Disposables</div>
+                            <h3 class="product-title">Premium Disposable 7000 Puffs</h3>
+                            <div class="product-price">$29.99</div>
+                            <div class="product-actions">
+                                <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                                <button class="btn btn-outline view-details">Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 2 -->
+                    <div class="product-card">
+                        <div class="product-badge">
+                            <span class="badge badge-warning">Best Seller</span>
+                        </div>
+                        <div class="product-img">
+                            <img src="/api/placeholder/200/200" alt="Starter Kit">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-category">Hardware</div>
+                            <h3 class="product-title">Advanced Starter Kit</h3>
+                            <div class="product-price">$59.99</div>
+                            <div class="product-actions">
+                                <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                                <button class="btn btn-outline view-details">Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 3 -->
+                    <div class="product-card">
+                        <div class="product-img">
+                            <img src="/api/placeholder/200/200" alt="E-Liquid">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-category">E-Liquids</div>
+                            <h3 class="product-title">Premium Fruit Blend E-Liquid 60ml</h3>
+                            <div class="product-price">$24.99</div>
+                            <div class="product-actions">
+                                <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                                <button class="btn btn-outline view-details">Details</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Product 4 -->
+                    <div class="product-card">
+                        <div class="product-badge">
+                            <span class="badge badge-success">Popular</span>
+                        </div>
+                        <div class="product-img">
+                            <img src="/api/placeholder/200/200" alt="Pod System">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-category">Pods</div>
+                            <h3 class="product-title">Refillable Pod System</h3>
+                            <div class="product-price">$34.99</div>
+                            <div class="product-actions">
+                                <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                                <button class="btn btn-outline view-details">Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center my-4">
+                    <a href="products.html" class="btn btn-primary">View All Products</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Store Info Section -->
+        <section class="store-info" id="location">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Visit Our Store</h2>
+                    <p>Conveniently located near TMU campus</p>
+                </div>
+                <div class="info-container">
+                    <div class="info-left">
+                        <div class="info-detail">
+                            <h4><i class="fas fa-map-marker-alt"></i> Location</h4>
+                            <p>361 Yonge St, Toronto, ON M5B 2L3</p>
+                        </div>
+                        
+                        <div class="info-detail">
+                            <h4><i class="fas fa-phone"></i> Contact</h4>
+                            <p>Phone: (437) 267-1990</p>
+                            <p>Email: newvape361@gmail.com</p>
+                        </div>
+                        
+                        <div class="info-detail">
+                            <h4><i class="fas fa-clock"></i> Store Hours</h4>
+                            <table class="hours-table">
+                                <tr>
+                                    <td>Monday</td>
+                                    <td>10 a.m.–11 p.m.</td>
+                                </tr>
+                                <tr>
+                                    <td>Tuesday</td>
+                                    <td>10 a.m.–11 p.m.</td>
+                                </tr>
+                                <tr>
+                                    <td>Wednesday</td>
+                                    <td>10 a.m.–11 p.m.</td>
+                                </tr>
+                                <tr>
+                                    <td>Thursday</td>
+                                    <td>10 a.m.–11 p.m.</td>
+                                </tr>
+                                <tr>
+                                    <td>Friday</td>
+                                    <td>10 a.m.–11 p.m.</td>
+                                </tr>
+                                <tr>
+                                    <td>Saturday</td>
+                                    <td>10 a.m.–11 p.m.</td>
+                                </tr>
+                                <tr>
+                                    <td>Sunday</td>
+                                    <td>10 a.m.–11 p.m.</td>
+                                </tr>
+                            </table>
+                        </div>
+                        
+                        <div class="my-4">
+                            <p>We're located just steps away from TMU campus, making it convenient for students and locals to visit us anytime. Our extended hours ensure we're always available when you need us.</p>
+                            <p class="my-4">Looking for the best vape deals in Toronto? Look no further! We pride ourselves on offering the most competitive prices in the area, and we're always willing to match or beat any competitor's price.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-right">
+                        <div class="map-container">
+                            <img src="/api/placeholder/400/400" alt="Store Location Map">
+                        </div>
+                        <div class="text-center my-4">
+                            <a href="https://maps.google.com/?q=361+Yonge+St,+Toronto,+ON+M5B+2L3" target="_blank" class="btn btn-primary">Get Directions</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="my-5">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Contact Us</h2>
+                    <p>Have questions? We're here to help</p>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number (Optional)</label>
+                            <input type="tel" id="phone" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" class="form-control" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <div class="footer-container">
+                    <div class="footer-section footer-about">
+                        <a href="#" class="footer-logo">NewVape.ca</a>
+                        <p>Toronto's premier destination for high-quality vaping products at unbeatable prices. Located near TMU campus, we offer a wide selection of disposables, hardware, e-liquids, and accessories.</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-tiktok"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h3>Quick Links</h3>
+                        <ul class="footer-links">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="products.html#disposables">Disposables</a></li>
+                            <li><a href="products.html#hardware">Hardware</a></li>
+                            <li><a href="products.html#eliquids">E-Liquids</a></li>
+                            <li><a href="products.html#pods">Pods & Cartridges</a></li>
+                            <li><a href="#deals">Deals</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-section">
+                        <h3>Customer Service</h3>
+                        <ul class="footer-links">
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#contact">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-section footer-contact">
+                        <h3>Contact Information</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> 361 Yonge St, Toronto, ON M5B 2L3</p>
+                        <p><i class="fas fa-phone"></i> (437) 267-1990</p>
+                        <p><i class="fas fa-envelope"></i> newvape361@gmail.com</p>
+                        <p><i class="fas fa-clock"></i> Open Today: 8 a.m.–1 a.m.</p>
+                    </div>
+                </div>
+                
+                <div class="age-warning">
+                    <p>WARNING: All products on this website are intended for adults 19 years or older. Products sold may contain nicotine which is addictive. Please use responsibly.</p>
+                </div>
+                
+                <div class="footer-bottom">
+                    <p>&copy; 2025 NewVape.ca. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Cart Sidebar -->
+        <div class="cart-sidebar" id="cartSidebar">
+            <div class="cart-header">
+                <h3>Your Cart</h3>
+                <button class="close-cart" id="closeCart">&times;</button>
+            </div>
+            <div class="cart-items" id="cartItems">
+                <!-- Cart items will be dynamically added here -->
+                <div class="empty-cart-message">Your cart is empty.</div>
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <span>Total:</span>
+                    <span id="cartTotal">$0.00</span>
+                </div>
+                <a href="checkout.html" class="btn btn-primary" id="checkoutBtn">Proceed to Checkout</a>
+            </div>
+        </div>
+
+        <!-- Login Modal -->
+        <div class="modal" id="loginModal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Login</h3>
+                    <button class="close-modal" id="closeLoginModal">&times;</button>
+                </div>
+                <form id="loginForm">
+                    <div class="form-group">
+                        <label for="loginEmail">Email Address</label>
+                        <input type="email" id="loginEmail" class="form-control" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="loginPassword">Password</label>
+                        <input type="password" id="loginPassword" class="form-control" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Login</button>
+                    <div class="form-footer">
+                        <p>Don't have an account? <a href="#" id="showRegisterModal">Register</a></p>
+                        <p>Are you the owner? <a href="#" id="showAdminLogin">Admin Login</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+        // Select elements
+        const ageVerification = document.getElementById('age-verification');
+        const mainContent = document.getElementById('main-content');
+        const verifyAgeBtn = document.getElementById('verifyAge');
+        const rejectAgeBtn = document.getElementById('rejectAge');  
+
+        localStorage.removeItem('ageVerified');
+        sessionStorage.removeItem('ageVerified');
+
+        // Handle "Yes" Click - Hide popup but don’t remember
+        verifyAgeBtn.addEventListener('click', function () {
+            ageVerification.style.display = 'none';
+            mainContent.style.display = 'block';
+        });
+
+        // Handle "No" Click - Redirect user
+        rejectAgeBtn.addEventListener('click', function () {
+            window.location.href = 'https://www.google.com';
+        });
+
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navLinks = document.getElementById('navLinks');
+
+        if (mobileMenuBtn && navLinks) {
+            mobileMenuBtn.addEventListener('click', function () {
+                navLinks.classList.toggle('active');
+            });
+        }
+
+        // Cart Sidebar Toggle
+        const cartIcon = document.getElementById('cartIcon');
+        const cartSidebar = document.getElementById('cartSidebar');
+        const closeCart = document.getElementById('closeCart');
+
+        if (cartIcon && cartSidebar && closeCart) {
+            cartIcon.addEventListener('click', function () {
+                cartSidebar.classList.add('active');
+            });
+            closeCart.addEventListener('click', function () {
+                cartSidebar.classList.remove('active');
+            });
+        }
+
+        // User Login Modal
+        const userIcon = document.getElementById('userIcon');
+        const loginModal = document.getElementById('loginModal');
+        const closeLoginModal = document.getElementById('closeLoginModal');
+
+        if (userIcon && loginModal && closeLoginModal) {
+            userIcon.addEventListener('click', function () {
+                loginModal.style.display = 'flex';
+            });
+            closeLoginModal.addEventListener('click', function () {
+                loginModal.style.display = 'none';
+            });
+        }
+
+        // Product Tabs (if on product detail page)
+        const tabLinks = document.querySelectorAll('.tab-link');
+        if (tabLinks.length > 0) {
+            tabLinks.forEach(tab => {
+                tab.addEventListener('click', function () {
+                    tabLinks.forEach(t => t.classList.remove('active'));
+                    this.classList.add('active');
+                    document.querySelectorAll('.tab-content').forEach(content => {
+                        content.classList.remove('active');
+                    });
+                    document.getElementById(this.getAttribute('data-tab')).classList.add('active');
+                });
+            });
+        }
+});
+
+    </script>
+</body>
+</html>

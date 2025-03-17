@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - NewVape.ca</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo"><a href="index.html"><i class="fas fa-cloud"></i> NewVape<span style="color: var(--accent)">.ca</span></a></div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li>
+                    <a href="products.html" class="active">Products <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="#disposables">Disposables</a>
+                        <a href="#hardware">Hardware</a>
+                        <a href="#eliquids">E-Liquids</a>
+                        <a href="#pods">Pods & Cartridges</a>
+                        <a href="#accessories">Accessories</a>
+                    </div>
+                </li>
+                <li><a href="index.html#deals">Deals</a></li>
+                <li><a href="index.html#location">Visit Us</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <div class="header-icons">
+                <div class="header-icon" id="searchIcon">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="header-icon" id="userIcon">
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="header-icon" id="cartIcon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Products Banner -->
+    <div class="products-banner">
+        <div class="container">
+            <h1>Our Products</h1>
+            <p>Browse our extensive collection of premium vaping products</p>
+        </div>
+    </div>
+
+    <!-- Product Filters -->
+    <div class="product-filters">
+        <div class="container">
+            <div class="filters-wrapper">
+                <div class="filter-group">
+                    <label for="category">Category:</label>
+                    <select id="category" class="filter-select">
+                        <option value="all">All Categories</option>
+                        <option value="disposables">Disposables</option>
+                        <option value="hardware">Hardware</option>
+                        <option value="eliquids">E-Liquids</option>
+                        <option value="pods">Pods & Cartridges</option>
+                        <option value="accessories">Accessories</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="sort">Sort By:</label>
+                    <select id="sort" class="filter-select">
+                        <option value="popular">Most Popular</option>
+                        <option value="newest">Newest</option>
+                        <option value="price-low">Price: Low to High</option>
+                        <option value="price-high">Price: High to Low</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="price">Price Range:</label>
+                    <select id="price" class="filter-select">
+                        <option value="all">All Prices</option>
+                        <option value="under-20">Under $20</option>
+                        <option value="20-40">$20 - $40</option>
+                        <option value="40-60">$40 - $60</option>
+                        <option value="over-60">Over $60</option>
+                    </select>
+                </div>
+                <button class="btn btn-primary filter-btn">Apply Filters</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Disposables Section -->
+    <section class="products-section" id="disposables">
+        <div class="container">
+            <div class="section-title">
+                <h2>Disposable Vapes</h2>
+                <p>Convenient, pre-filled devices for on-the-go use</p>
+            </div>
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <div class="product-badge">
+                        <span class="badge badge-primary">New</span>
+                    </div>
+                    <div class="product-img">
+                        <img src="/api/placeholder/200/200" alt="Disposable Vape">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Disposables</div>
+                        <h3 class="product-title">Premium Disposable 7000 Puffs</h3>
+                        <div class="product-price">$29.99</div>
+                        <div class="product-actions">
+                            <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                            <a href="product-detail.html?id=1" class="btn btn-outline view-details">Details</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <div class="product-badge">
+                        <span class="badge badge-success">Popular</span>
+                    </div>
+                    <div class="product-img">
+                        <img src="/api/placeholder/200/200" alt="Disposable Vape">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Disposables</div>
+                        <h3 class="product-title">Ultra Slim Disposable 5000 Puffs</h3>
+                        <div class="product-price">$26.99</div>
+                        <div class="product-actions">
+                            <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                            <a href="product-detail.html?id=2" class="btn btn-outline view-details">Details</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="/api/placeholder/200/200" alt="Disposable Vape">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Disposables</div>
+                        <h3 class="product-title">Compact Disposable 3500 Puffs</h3>
+                        <div class="product-price">$21.99</div>
+                        <div class="product-actions">
+                            <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                            <a href="product-detail.html?id=3" class="btn btn-outline view-details">Details</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <div class="product-badge">
+                        <span class="badge badge-warning">Best Seller</span>
+                    </div>
+                    <div class="product-img">
+                        <img src="/api/placeholder/200/200" alt="Disposable Vape">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Disposables</div>
+                        <h3 class="product-title">Dual Flavor Disposable 4000 Puffs</h3>
+                        <div class="product-price">$24.99</div>
+                        <div class="product-actions">
+                            <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                            <a href="product-detail.html?id=4" class="btn btn-outline view-details">Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="view-more-container">
+                <button class="btn btn-outline view-more">View More Disposables</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hardware Section -->
+    <section class="products-section bg-light" id="hardware">
+        <div class="container">
+            <div class="section-title">
+                <h2>Vape Hardware</h2>
+                <p>High-quality devices, mods, and starter kits</p>
+            </div>
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <div class="product-badge">
+                        <span class="badge badge-warning">Best Seller</span>
+                    </div>
+                    <div class="product-img">
+                        <img src="/api/placeholder/200/200" alt="Vape Device">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Hardware</div>
+                        <h3 class="product-title">Advanced Starter Kit</h3>
+                        <div class="product-price">$59.99</div>
+                        <div class="product-actions">
+                            <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                            <a href="product-detail.html?id=5" class="btn btn-outline view-details">Details</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="/api/placeholder/200/200" alt="Vape Device">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Hardware</div>
+                        <h3 class="product-title">Compact Pod System</h3>
+                        <div class="product-price">$34.99</div>
+                        <div class="product-actions">
+                            <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                            <a href="product-detail.html?id=6" class="btn btn-outline view-details">Details</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <div class="product-badge">
+                        <span class="badge badge-primary">New</span>
+                    </div>
+                    <div class="product-img">
+                        <img src="/api/placeholder/200/200" alt="Vape Device">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Hardware</div>
+                        <h3 class="product-title">High-Wattage Box Mod</h3>
+                        <div class="product-price">$79.99</div>
+                        <div class="product-actions">
+                            <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                            <a href="product-detail.html?id=7" class="btn btn-outline view-details">Details</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="/api/placeholder/200/200" alt="Vape Device">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Hardware</div>
+                        <h3 class="product-title">Pen-Style Vape Kit</h3>
+                        <div class="product-price">$39.99</div>
+                        <div class="product-actions">
+                            <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                            <a href="product-detail.html?id=8" class="btn btn-outline view-details">Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="view-more-container">
+                <button class="btn btn-outline view-more">View More Hardware</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- E-Liquids Section -->
+    <section class="products-section" id="eliquids">
+        <div class="container">
+            <div class="section-title">
+                <h2>E-Liquids</h2>
+                <p>Premium flavors in various nicotine strengths</p>
+            </div>
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="/api/placeholder/200/200" alt="E-Liquid">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">E-Liquids</div>
+                        <h3 class="product-title">Premium Fruit Blend E-Liquid 60ml</h3>
+                        <div class="product-price">$24.99</div>
+                        <div class="product-actions">
+                            <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                            <a href="product-detail.html?id=9" class="btn btn-outline view-details">Details</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <div class="product-badge">
+                        <span class="badge badge-success">Popular</span>
+                    </div>
+                    <div class="product-img">
+                        <img src="/api/placeholder/200/200" alt="E-Liquid">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">E-Liquids</div>
+                        <h3 class="product-title">Dessert Flavor E-Liquid 60ml</h3>
+                        <div class="product-price">$24.99</div>
+                        <div class="product-actions">
+                            <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                            <a href="product-detail.html?id=10" class="btn btn-outline view-details">Details</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <div class="product-badge">
+                        <span class="badge badge-primary">New</span>
+                    </div>
+                    <div class="product-img">
+                        <img src="/api/placeholder/200/200" alt="E-Liquid">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">E-Liquids</div>
+                        <h3 class="product-title">Menthol E-Liquid 60ml</h3>
+                        <div class="product-price">$22.99</div>
+                        <div class="product-actions">
+                            <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                            <a href="product-detail.html?id=11" class="btn btn-outline view-details">Details</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="/api/placeholder/200/200" alt="E-Liquid">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">E-Liquids</div>
+                        <h3 class="product-title">Tobacco Flavor E-Liquid 60ml</h3>
+                        <div class="product-price">$22.99</div>
+                        <div class="product-actions">
+                            <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                            <a href="product-detail.html?id=12" class="btn btn-outline view-details">Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="view-more-container">
+                <button class="btn btn-outline view-more">View More E-Liquids</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pods Section -->
+    <section class="products-section bg-light" id="pods">
+        <div class="container">
+            <div class="section-title">
+                <h2>Pods & Cartridges</h2>
+                <p>Replacement pods and cartridges for your device</p>
+            </div>
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <div class="product-badge">
+                        <span class="badge badge-success">Popular</span>
+                    </div>
+                    <div class="product-img">
+                        <img src="/api/placeholder/200/200" alt="Pods">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Pods</div>
+                        <h3 class="product-title">Refillable Pod System</h3>
+                        <div class="product-price">$34.99</div>
+                        <div class="product-actions">
+                            <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                            <a href="product-detail.html?id=13" class="btn btn-outline view-details">Details</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="/api/placeholder/200/200" alt="Pods">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Pods</div>
+                        <h3 class="product-title">Replacement Pod (3-Pack)</h3>
+                        <div class="product-price">$15.99</div>
+                        <div class="product-actions">
+                            <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                            <a href="product-detail.html?id=14" class="btn btn-outline view-details">Details</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <div class="product-badge">
+                        <span class="badge badge-primary">New</span>
+                    </div>
+                    <div class="product-img">
+                        <img src="/api/placeholder/200/200" alt="Pods">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Pods</div>
+                        <h3 class="product-title">Pre-filled Flavor Pods (4-Pack)</h3>
+                        <div class="product-price">$19.99</div>
+                        <div class="product-actions">
+                            <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                            <a href="product-detail.html?id=15" class="btn btn-outline view-details">Details</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="/api/placeholder/200/200" alt="Pods">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Pods</div>
+                        <h3 class="product-title">Ceramic Coil Replacement Cartridge</h3>
+                        <div class="product-price">$12.99</div>
+                        <div class="product-actions">
+                            <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                            <a href="product-detail.html?id=16" class="btn btn-outline view-details">Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="view-more-container">
+                <button class="btn btn-outline view-more">View More Pods & Cartridges</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Accessories Section -->
+    <section class="products-section" id="accessories">
+        <div class="container">
+            <div class="section-title">
+                <h2>Accessories</h2>
+                <p>Essential accessories for your vaping experience</p>
+            </div>
+            <div class="products-grid">
+                <!-- Product 1 -->
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="/api/placeholder/200/200" alt="Accessory">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Accessories</div>
+                        <h3 class="product-title">Coil Pack (5pcs)</h3>
+                        <div class="product-price">$19.99</div>
+                        <div class="product-actions">
+                            <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                            <a href="product-detail.html?id=17" class="btn btn-outline view-details">Details</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 2 -->
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="/api/placeholder/200/200" alt="Accessory">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Accessories</div>
+                        <h3 class="product-title">Battery Charger</h3>
+                        <div class="product-price">$12.99</div>
+                        <div class="product-actions">
+                            <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                            <a href="product-detail.html?id=18" class="btn btn-outline view-details">Details</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 3 -->
+                <div class="product-card">
+                    <div class="product-badge">
+                        <span class="badge badge-primary">New</span>
+                    </div>
+                    <div class="product-img">
+                        <img src="/api/placeholder/200/200" alt="Accessory">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Accessories</div>
+                        <h3 class="product-title">Silicone Case</h3>
+                        <div class="product-price">$8.99</div>
+                        <div class="product-actions">
+                            <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                            <a href="product-detail.html?id=19" class="btn btn-outline view-details">Details</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product 4 -->
+                <div class="product-card">
+                    <div class="product-img">
+                        <img src="/api/placeholder/200/200" alt="Accessory">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-category">Accessories</div>
+                        <h3 class="product-title">Drip Tips (3-Pack)</h3>
+                        <div class="product-price">$9.99</div>
+                        <div class="product-actions">
+                            <button class="btn btn-primary add-to-cart">Add to Cart</button>
+                            <a href="product-detail.html?id=20" class="btn btn-outline view-details">Details</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="view-more-container">
+                <button class="btn btn-outline view-more">View More Accessories</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-section footer-about">
+                    <a href="index.html" class="footer-logo">NewVape.ca</a>
+                    <p>Toronto's premier destination for high-quality vaping products at unbeatable prices. Located near TMU campus, we offer a wide selection of disposables, hardware, e-liquids, and accessories.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#disposables">Disposables</a></li>
+                        <li><a href="#hardware">Hardware</a></li>
+                        <li><a href="#eliquids">E-Liquids</a></li>
+                        <li><a href="#pods">Pods & Cartridges</a></li>
+                        <li><a href="index.html#deals">Deals</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Customer Service</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="#">Refund Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="index.html#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section footer-contact">
+                    <h3>Contact Information</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 335 Yonge St, Toronto, ON M5B 2L3</p>
+                    <p><i class="fas fa-phone"></i> (437) 267-1990</p>
+                    <p><i class="fas fa-envelope"></i> newvape361@gmail.com</p>
+                    <p><i class="fas fa-clock"></i> Open Today: 8 a.m.–1 a.m.</p>
+                </div>
+            </div>
+            
+            <div class="age-warning">
+                <p>WARNING: All products on this website are intended for adults 19 years or older. Products sold may contain nicotine which is addictive. Please use responsibly.</p>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 NewVape.ca. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <button class="close-cart" id="closeCart">&times;</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <!-- Cart items will be dynamically added here -->
+            <div class="empty-cart-message">Your cart is empty.</div>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cartTotal">$0.00</span>
+            </div>
+            <a href="checkout.html" class="btn btn-primary" id="checkoutBtn">Proceed to Checkout</a>
+        </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div class="modal" id="loginModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Login</h3>
+                <button class="close-modal" id="closeLoginModal">&times;</button>
+            </div>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="loginEmail">Email Address</label>
+                    <input type="email" id="loginEmail" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Password</label>
+                    <input type="password" id="loginPassword" class="form-control" required>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Login</button>
+                <div class="form-footer">
+                    <p>Don't have an account? <a href="#" id="showRegisterModal">Register</a></p>
+                    <p>Are you the owner? <a href="admin.html" id="showAdminLogin">Admin Login</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

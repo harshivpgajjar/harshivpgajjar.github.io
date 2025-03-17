@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - NewVape.ca</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo"><a href="index.html"><i class="fas fa-cloud"></i> NewVape<span style="color: var(--accent)">.ca</span></a></div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Home</a></li>
+                <li>
+                    <a href="products.html">Products <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="products.html#disposables">Disposables</a>
+                        <a href="products.html#hardware">Hardware</a>
+                        <a href="products.html#eliquids">E-Liquids</a>
+                        <a href="products.html#pods">Pods & Cartridges</a>
+                        <a href="products.html#accessories">Accessories</a>
+                    </div>
+                </li>
+                <li><a href="index.html#deals">Deals</a></li>
+                <li><a href="index.html#location">Visit Us</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <div class="header-icons">
+                <div class="header-icon" id="searchIcon">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="header-icon" id="userIcon">
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="header-icon" id="cartIcon">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-count">0</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Checkout Content -->
+    <div class="checkout-page">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="index.html">Home</a> &gt; <span>Checkout</span>
+            </div>
+            
+            <h1 class="page-title">Checkout</h1>
+            
+            <div class="checkout-content">
+                <div class="checkout-info">
+                    <div class="customer-info">
+                        <h3 class="checkout-title">Customer Information</h3>
+                        <div class="form-row">
+                            <div class="form-col">
+                                <div class="form-group">
+                                    <label for="firstName">First Name</label>
+                                    <input type="text" id="firstName" class="form-control" required>
+                                </div>
+                            </div>
+                            <div class="form-col">
+                                <div class="form-group">
+                                    <label for="lastName">Last Name</label>
+                                    <input type="text" id="lastName" class="form-control" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" class="form-control" required>
+                        </div>
+                    </div>
+                    
+                    <div class="pickup-info">
+                        <h3 class="checkout-title">Pickup Information</h3>
+                        <p>All orders are for in-store pickup at:</p>
+                        <p><strong>335 Yonge St, Toronto, ON M5B 2L3</strong></p>
+                        <div class="form-group">
+                            <label for="pickupDate">Preferred Pickup Date</label>
+                            <input type="date" id="pickupDate" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="notes">Order Notes (Optional)</label>
+                            <textarea id="notes" class="form-control" rows="3"></textarea>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="checkout-summary">
+                    <h3 class="checkout-title">Order Summary</h3>
+                    <div class="checkout-items" id="checkoutItems">
+                        <!-- Checkout items will be dynamically added here -->
+                        <!-- Example item for demonstration -->
+                        <div class="checkout-item">
+                            <div class="checkout-item-img">
+                                <img src="/api/placeholder/60/60" alt="Product">
+                            </div>
+                            <div class="checkout-item-details">
+                                <div class="checkout-item-title">Premium Disposable 7000 Puffs</div>
+                                <div class="checkout-item-price">$29.99</div>
+                                <div class="checkout-item-quantity">Quantity: 1</div>
+                            </div>
+                        </div>
+                        <div class="checkout-item">
+                            <div class="checkout-item-img">
+                                <img src="/api/placeholder/60/60" alt="Product">
+                            </div>
+                            <div class="checkout-item-details">
+                                <div class="checkout-item-title">Fruit Blend E-Liquid 60ml</div>
+                                <div class="checkout-item-price">$24.99</div>
+                                <div class="checkout-item-quantity">Quantity: 2</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="discount-form">
+                        <input type="text" class="discount-input" placeholder="Discount Code">
+                        <button class="apply-btn">Apply</button>
+                    </div>
+                    
+                    <div class="checkout-totals">
+                        <div class="checkout-row">
+                            <span>Subtotal</span>
+                            <span id="subtotal">$79.97</span>
+                        </div>
+                        <div class="checkout-row">
+                            <span>Tax (13%)</span>
+                            <span id="tax">$10.40</span>
+                        </div>
+                        <div class="checkout-row total">
+                            <span>Total</span>
+                            <span id="total">$90.37</span>
+                        </div>
+                    </div>
+                    
+                    <button class="btn btn-primary" style="width: 100%;" id="placeOrderBtn">Place Order</button>
+                    <p style="text-align: center; margin-top: 15px; font-size: 0.9rem;">
+                        By placing your order, you agree to our <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Cart Sidebar -->
+    <div class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h3>Your Cart</h3>
+            <button class="close-cart" id="closeCart">&times;</button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <!-- Cart items will be dynamically added here -->
+            <div class="cart-item">
+                <div class="cart-item-img">
+                    <img src="/api/placeholder/60/60" alt="Product">
+                </div>
+                <div class="cart-item-info">
+                    <div class="cart-item-title">Premium Disposable 7000 Puffs</div>
+                    <div class="cart-item-price">$29.99</div>
+                    <div class="cart-item-quantity">
+                        <button class="qty-btn minus">-</button>
+                        <input type="number" class="qty-input" value="1" min="1" max="99" readonly>
+                        <button class="qty-btn plus">+</button>
+                    </div>
+                    <button class="remove-item">Remove</button>
+                </div>
+            </div>
+            <div class="cart-item">
+                <div class="cart-item-img">
+                    <img src="/api/placeholder/60/60" alt="Product">
+                </div>
+                <div class="cart-item-info">
+                    <div class="cart-item-title">Fruit Blend E-Liquid 60ml</div>
+                    <div class="cart-item-price">$24.99</div>
+                    <div class="cart-item-quantity">
+                        <button class="qty-btn minus">-</button>
+                        <input type="number" class="qty-input" value="2" min="1" max="99" readonly>
+                        <button class="qty-btn plus">+</button>
+                    </div>
+                    <button class="remove-item">Remove</button>
+                </div>
+            </div>
+        </div>
+        <div class="cart-footer">
+            <div class="cart-total">
+                <span>Total:</span>
+                <span id="cartTotal">$79.97</span>
+            </div>
+            <a href="checkout.html" class="btn btn-primary">Proceed to Checkout</a>
+        </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div class="modal" id="loginModal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Login</h3>
+                <button class="close-modal" id="closeLoginModal">&times;</button>
+            </div>
+            <form id="loginForm">
+                <div class="form-group">
+                    <label for="loginEmail">Email Address</label>
+                    <input type="email" id="loginEmail" class="form-control" required>
+                </div>
+                <div class="form-group">
+                    <label for="loginPassword">Password</label>
+                    <input type="password" id="loginPassword" class="form-control" required>
+                </div>
+                <button type="submit" class="btn btn-primary" style="width: 100%;">Login</button>
+                <div class="form-footer">
+                    <p>Don't have an account? <a href="#" id="showRegisterModal">Register</a></p>
+                    <p>Are you the owner? <a href="admin.html" id="showAdminLogin">Admin Login</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-container">
+                <div class="footer-section footer-about">
+                    <a href="index.html" class="footer-logo">NewVape.ca</a>
+                    <p>Toronto's premier destination for high-quality vaping products at unbeatable prices. Located near TMU campus, we offer a wide selection of disposables, hardware, e-liquids, and accessories.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html#disposables">Disposables</a></li>
+                        <li><a href="products.html#hardware">Hardware</a></li>
+                        <li><a href="products.html#eliquids">E-Liquids</a></li>
+                        <li><a href="products.html#pods">Pods & Cartridges</a></li>
+                        <li><a href="index.html#deals">Deals</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Customer Service</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="#">Refund Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="index.html#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section footer-contact">
+                    <h3>Contact Information</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> 335 Yonge St, Toronto, ON M5B 2L3</p>
+                    <p><i class="fas fa-phone"></i> (437) 267-1990</p>
+                    <p><i class="fas fa-envelope"></i> newvape361@gmail.com</p>
+                    <p><i class="fas fa-clock"></i> Open Today: 8 a.m.–1 a.m.</p>
+                </div>
+            </div>
+            
+            <div class="age-warning">
+                <p>WARNING: All products on this website are intended for adults 19 years or older. Products sold may contain nicotine which is addictive. Please use responsibly.</p>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 NewVape.ca. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
