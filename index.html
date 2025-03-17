@@ -506,84 +506,8 @@
         </div>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-        // Select elements
-        const ageVerification = document.getElementById('age-verification');
-        const mainContent = document.getElementById('main-content');
-        const verifyAgeBtn = document.getElementById('verifyAge');
-        const rejectAgeBtn = document.getElementById('rejectAge');  
-
-        localStorage.removeItem('ageVerified');
-        sessionStorage.removeItem('ageVerified');
-
-        // Handle "Yes" Click - Hide popup but don’t remember
-        verifyAgeBtn.addEventListener('click', function () {
-            ageVerification.style.display = 'none';
-            mainContent.style.display = 'block';
-        });
-
-        // Handle "No" Click - Redirect user
-        rejectAgeBtn.addEventListener('click', function () {
-            window.location.href = 'https://www.google.com';
-        });
-
-        // Mobile Menu Toggle
-        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
-        const navLinks = document.getElementById('navLinks');
-
-        if (mobileMenuBtn && navLinks) {
-            mobileMenuBtn.addEventListener('click', function () {
-                navLinks.classList.toggle('active');
-            });
-        }
-
-        // Cart Sidebar Toggle
-        const cartIcon = document.getElementById('cartIcon');
-        const cartSidebar = document.getElementById('cartSidebar');
-        const closeCart = document.getElementById('closeCart');
-
-        if (cartIcon && cartSidebar && closeCart) {
-            cartIcon.addEventListener('click', function () {
-                cartSidebar.classList.add('active');
-            });
-            closeCart.addEventListener('click', function () {
-                cartSidebar.classList.remove('active');
-            });
-        }
-
-        // User Login Modal
-        const userIcon = document.getElementById('userIcon');
-        const loginModal = document.getElementById('loginModal');
-        const closeLoginModal = document.getElementById('closeLoginModal');
-
-        if (userIcon && loginModal && closeLoginModal) {
-            userIcon.addEventListener('click', function () {
-                loginModal.style.display = 'flex';
-            });
-            closeLoginModal.addEventListener('click', function () {
-                loginModal.style.display = 'none';
-            });
-        }
-
-        // Product Tabs (if on product detail page)
-        const tabLinks = document.querySelectorAll('.tab-link');
-        if (tabLinks.length > 0) {
-            tabLinks.forEach(tab => {
-                tab.addEventListener('click', function () {
-                    tabLinks.forEach(t => t.classList.remove('active'));
-                    this.classList.add('active');
-                    document.querySelectorAll('.tab-content').forEach(content => {
-                        content.classList.remove('active');
-                    });
-                    document.getElementById(this.getAttribute('data-tab')).classList.add('active');
-                });
-            });
-        }
-});
-
-    </script>
-</body>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+        <script src="script.js"></script>
+    </body>
 </html>
