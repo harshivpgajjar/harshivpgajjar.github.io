@@ -392,7 +392,6 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     }
-
     // ===== Product Tabs =====
     const tabLinks = document.querySelectorAll('.tab-link');
     if (tabLinks.length > 0) {
